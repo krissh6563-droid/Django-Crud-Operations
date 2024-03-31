@@ -68,8 +68,8 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'Crud_operation.wsgi.application'
-WSGI_APPLICATION = 'vercel_app.wsgi.app'
+WSGI_APPLICATION = 'Crud_operation.wsgi.application'
+
 
 
 # Database
