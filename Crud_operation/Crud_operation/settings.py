@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -76,12 +77,27 @@ WSGI_APPLICATION = 'Crud_operation.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'crudoperationdb',
+        'USER': 'crudoperationdb_user',
+        'PASSWORD': 'JaQqwST8nY3g8OI7jwEjcxTULjU7VYd1',
+        'HOST': 'dpg-co5r8uuv3ddc7395bpa0-a',
+        'PORT': '5432'
     }
 }
+
+DATABASES['default'] = dj_database_url.parse("postgres://crudoperationdb_user:JaQqwST8nY3g8OI7jwEjcxTULjU7VYd1@dpg-co5r8uuv3ddc7395bpa0-a.oregon-postgres.render.com/crudoperationdb")
+
+# postgres://crudoperationdb_user:JaQqwST8nY3g8OI7jwEjcxTULjU7VYd1@dpg-co5r8uuv3ddc7395bpa0-a.oregon-postgres.render.com/crudoperationdb
 
 
 # Password validation
