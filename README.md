@@ -14,12 +14,13 @@ Before running this project, make sure you have the following installed on your 
 - Django
 
 You can install Django using pip:
+  pip install Django
 
 
 ### Installing
 
 1. Clone the repository to your local machine:
-   git clone https://github.com/your_username/your_project.git
+   git clone https://github.com/krissh6563-droid/Django-Crud-Operations
 
 
 3. Navigate to the project directory:
@@ -66,3 +67,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc.
+
+## Live Demo
+
+[click me](https://django-crud-operations.onrender.com)
+
+## Screenshots
+
+![Screenshot (38)](https://github.com/krissh6563-droid/Django-Crud-Operations/assets/56572543/50fb5e0f-3cba-48cf-b16b-c33ac0be5d46)
+
